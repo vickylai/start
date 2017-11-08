@@ -1,0 +1,85 @@
+$white: #fff
+$black: #111
+$slate: #333333
+
+$font: 'Roboto', sans-serif
+$body-size: 24px
+//$font: monospace
+//$body-size: 16px
+$body-text: rgba(219,219,219,0.5)
+
+$links: rgba(219,219,219,0.3)
+$links-hover: $body-text
+
+*
+    margin: 0
+    padding: 0
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+html
+    background-color: $slate
+
+body
+    font-size: $body-size
+    font-family: $font
+    font-weight: 300
+    color: $body-text
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh
+    line-height: 1.5em
+
+a
+    color: $links
+    text-decoration: none
+    &:hover
+        color: $links-hover
+    &:active
+        color: $links
+
+hr
+    margin: 1em auto
+    background-color: transparent
+    border-bottom: 1px solid $body-text
+    width: 50%
+
+
+.advice
+    background: $slate
+    font-style: italic
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    z-index: 1
+    display: flex
+    justify-content: center
+    align-items: center
+
+.page
+    margin: 1rem
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+.center
+    text-align: center
+
+.quote
+    text-align: center
+    max-width: 600px
+
+.quote-author
+    text-align: right
+
+.creds
+    position: absolute
+    bottom: 0
+    text-align: right
+    width: 100%
+    font-size: 0.8rem
+    color: $links
+    padding: 1rem

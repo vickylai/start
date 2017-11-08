@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="Minimalistic start page with weather, your ip, a quote, and some other bits.">
+
+    <title>start.</title>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- project-specific javascript   -->
+    <script type="text/javascript" src="/js/starting.js"></script>
+
+    <!-- Google Fonts stack -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+
+    <!-- project CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="advice">Finding you...</div>
+    <section class="page">
+        <div class="center">
+            <span id="time"></span>
+            <span id="pipeya"></span>
+            <span id="temp"></span><span id="deg"></span>
+        </div>
+        <div class="center">
+            <span id="geo"></span>
+        </div>
+        <div class="center">
+            <span id="ip"></span>
+            <hr />
+        </div>
+        <div class="center quote">
+            <p class="quote-text" id="quoteT"></p>
+            <p class="quote-author" id="quoteA"></p>
+        </div>
+    </section>
+
+    <div class="creds">
+        <p>
+            <a href="https://api.ipify.org" target="_blank" rel="noopener">ipify</a> | 
+            <a href="https://darksky.net/poweredby/" target="_blank" rel="noopener">powered by dark sky</a> | 
+            <a href="https://random-quote-generator.herokuapp.com" target="_blank" rel="noopener">quotes api</a> | 
+            <a href="https://vickylai.io" target="_blank" rel="noopener">maker</a>
+        </p>
+    </div>
+
+</body>
