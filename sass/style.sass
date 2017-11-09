@@ -2,6 +2,8 @@ $white: #fff
 $black: #111
 $slate: #333333
 
+$bg: linear-gradient(to top, #111111 0%, #232323 50%, #454545 100%);
+
 $font: 'Roboto', sans-serif
 $body-size: 24px
 //$font: monospace
@@ -18,7 +20,9 @@ $links-hover: $body-text
     box-sizing: border-box
 
 html
-    background-color: $slate
+     background-image: $bg
+     background-position-y: -3px
+     bottom: -3px
 
 body
     font-size: $body-size
@@ -33,6 +37,7 @@ body
 
 a
     color: $links
+    transition: ease 1s
     text-decoration: none
     &:hover
         color: $links-hover
