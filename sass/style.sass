@@ -6,8 +6,6 @@ $bg: linear-gradient(to top, #111111 0%, #232323 50%, #454545 100%);
 
 $font: 'Roboto', sans-serif
 $body-size: 24px
-//$font: monospace
-//$body-size: 16px
 $body-text: rgba(219,219,219,0.5)
 
 $links: rgba(219,219,219,0.3)
@@ -20,7 +18,6 @@ $links-hover: $body-text
     box-sizing: border-box
 
 html
-     background-image: $bg
      background-position-y: -3px
      bottom: -3px
 
@@ -71,7 +68,12 @@ hr
         opacity: 0
 
 .page
-    margin: 1rem
+    transition: ease 1s
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    padding: 1rem
     display: flex
     justify-content: center
     align-items: center
