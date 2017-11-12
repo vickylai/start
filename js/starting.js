@@ -20,22 +20,31 @@ function setMood(rise, set) {
     var h = getTime();
     if (h > set + 1 || h < rise) {
         // Night
-        document.body.style.backgroundImage = "linear-gradient(to top, #111111 0%, #232323 50%, #454545 100%)";
+        document.body.style.backgroundImage = "linear-gradient(10deg, #434343 0%, #000000 100%)";
     } else
         if (h >= rise && h <= rise + 1) {
             // Sunrise
+            document.getElementById('page').className += ' in';
             document.body.style.backgroundImage = "linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)";
-            document.body.style.color = "#111111";
+            document.body.style.color = "#222222";
+            document.getElementById('creds').className += ' dark-links';
+            document.getElementById('hr').style.borderBottom = "1px solid #222222";
         } else
             if (h >= rise + 2 && h <= set - 1) {
                 // Day
+                document.getElementById('page').className += ' in';
                 document.body.style.backgroundImage = "linear-gradient(to top, #a1c4fd 0%, #c2e9fb 100%)";
                 document.body.style.color = "#111111";
+                document.getElementById('creds').className += ' dark-links';
+                document.getElementById('hr').style.borderBottom = "1px solid #111111";
             } else
-                if (h == set && h <= set + 1) {
+                if (h == set || h <= set + 1) {
                     // Sunset
+                    document.getElementById('page').className += ' in';
                     document.body.style.backgroundImage = "linear-gradient(to bottom, #fa709a 0%, #fee140 100%)";
-                    document.body.style.color = "#111111";
+                    document.body.style.color = "#222222";
+                    document.getElementById('creds').className += ' dark-links';
+                    document.getElementById('hr').style.borderBottom = "1px solid #222222";
                 }
 }
 
